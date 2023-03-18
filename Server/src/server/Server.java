@@ -252,7 +252,7 @@ public class Server extends javax.swing.JFrame {
             if (data.getClient() == client) {
                 try {
                     id = generateFileID();
-                    File file = new File("D:/soket_data/" + id + "-" + dataInit.getFileName());
+                    File file = new File("../Fichier_client/" + id + "-" + dataInit.getFileName());
                     DataWriter writer = new DataWriter(file, dataInit.getFileSize());
                     data.addWrite(writer, id);
                 } catch (Exception e) {

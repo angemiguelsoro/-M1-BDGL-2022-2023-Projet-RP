@@ -164,7 +164,8 @@ public class Main_Client extends javax.swing.JFrame {
     }//GEN-LAST:event_cmdConnectActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        JFileChooser ch = new JFileChooser();
+        JFileChooser ch = new JFileChooser("../Fichier_serveur");
+        ch.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
         ch.setMultiSelectionEnabled(true);
         int opt = ch.showOpenDialog(this);
         if (opt == JFileChooser.APPROVE_OPTION) {
